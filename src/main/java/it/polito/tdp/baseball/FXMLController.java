@@ -49,26 +49,42 @@ public class FXMLController {
     
     @FXML
     void doCalcolaConnesse(ActionEvent event) {
-    	
+    	txtResult.setText("Ci sono "+model.getConnesse()+"componenti connesse");
     }
 
     
     
     @FXML
     void doCreaGrafo(ActionEvent event) {
-    	
+    	try {
+    	String salario=this.txtSalary.getText();
+    	int salarioNum=Integer.parseInt(salario);
+    	String anno= this.txtYear.getText();
+    	int annoNum= Integer.parseInt(anno);
+    	if(annoNum<1871 || annoNum>2019) {
+    		txtResult.setText("Devi inserire un anno compreso tra il 1871 eil 2019");
+    	}
+    	this.model.buildGraph(annoNum, salarioNum* 1000000);
+    	txtResult.setText("Grafo creato con successo \n");
+    	txtResult.appendText("Il grafo ha "+model.getNumVertici()+" vertici \n");
+    	txtResult.appendText("Il grafo ha "+model.getNumArchi()+" archi \n");
+    	}catch(Exception e) {
+    		e.printStackTrace();
+    		txtResult.setText("Devi inserire un valore numerico valido per l'anno e uno valido per il salario");
+    	}
     }
+    
 
     
     @FXML
     void doDreamTeam(ActionEvent event) {
-
     }
 
     
     @FXML
     void doGradoMassimo(ActionEvent event) {
-
+    	txtResult.setText("Il vertice di grado max è : " +model.getGradoMax()+"\n");
+    	txtResult.appendText("Con grado : "+model.getValoreGradoMax());
     }
 
     

@@ -8,9 +8,19 @@ public class Salary {
     private Integer teamID;
     private String playerID;
     private Double salary;
+    
 
+    public Salary(Integer iD, Integer year, String teamCode, Integer teamID, String playerID, Double salary) {
+		super();
+		this.iD = iD;
+		this.year = year;
+		this.teamCode = teamCode;
+		this.teamID = teamID;
+		this.playerID = playerID;
+		this.salary = salary;
+	}
 
-    public Integer getID(){
+	public Integer getID(){
         return iD;
     }
 

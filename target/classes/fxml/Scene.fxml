@@ -47,7 +47,7 @@
             </HBox>
             <HBox>
                <children>
-                  <Button fx:id="btnConnesse" disable="true" mnemonicParsing="false" onAction="#doCalcolaConnesse" text="Calcola Connesse">
+                  <Button fx:id="btnConnesse" mnemonicParsing="false" onAction="#doCalcolaConnesse" text="Calcola Connesse">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>
@@ -55,7 +55,7 @@
                         <Font size="16.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btnGradoMassimo" disable="true" mnemonicParsing="false" onAction="#doGradoMassimo" text="Grado Massimo">
+                  <Button fx:id="btnGradoMassimo" mnemonicParsing="false" onAction="#doGradoMassimo" text="Grado Massimo">
                      <HBox.margin>
                         <Insets left="60.0" />
                      </HBox.margin>
@@ -63,7 +63,7 @@
                         <Font size="16.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btnDreamTeam" disable="true" mnemonicParsing="false" onAction="#doDreamTeam" text="Dream Team">
+                  <Button fx:id="btnDreamTeam" mnemonicParsing="false" onAction="#doDreamTeam" text="Dream Team">
                      <font>
                         <Font size="16.0" />
                      </font>

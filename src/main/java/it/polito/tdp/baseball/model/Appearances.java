@@ -29,21 +29,11 @@ public class Appearances {
      * @param gamesPitcher
      * @param gamesCatcher
      */
-    public Appearances(Integer iD, Integer year, String teamCode, Integer teamID, String playerID, Integer games,
-			Integer gamesStarted, Integer gamesBatting, Integer gamesDefense, Integer gamesPitcher,
-			Integer gamesCatcher) {
+    public Appearances( Integer year, String teamCode, String playerID) {
 		super();
-		this.iD = iD;
 		this.year = year;
 		this.teamCode = teamCode;
-		this.teamID = teamID;
 		this.playerID = playerID;
-		this.games = games;
-		this.gamesStarted = gamesStarted;
-		this.gamesBatting = gamesBatting;
-		this.gamesDefense = gamesDefense;
-		this.gamesPitcher = gamesPitcher;
-		this.gamesCatcher = gamesCatcher;
 	}
     
 
@@ -134,6 +124,12 @@ public class Appearances {
     public void setGamesCatcher(Integer gamesCatcher){
         this.gamesCatcher=gamesCatcher;
     }
+
+
+	@Override
+	public String toString() {
+		return "Appearances [year=" + year + ", teamCode=" + teamCode + ", playerID=" + playerID + "]";
+	}
 
 
 }
