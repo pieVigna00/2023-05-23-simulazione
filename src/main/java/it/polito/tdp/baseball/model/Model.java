@@ -1,4 +1,5 @@
 package it.polito.tdp.baseball.model;
+//MOLTO IMPORTANTE PER QUERY CHE FA VEDERE CORRELAZIONE TRA QUERY VERTICI E QUERY ARCHI 
 //da guardare per capire database
 //da guardare per le query e gestione
 //da guardare per ispettore comp connesse
